@@ -1,0 +1,158 @@
+_type: export
+__export_format: 4
+__export_date: 2020-09-24T13:52:30.715Z
+__export_source: insomnia.desktop.app:v2020.3.3
+resources:
+  - _id: req_7ab4876431d540b49efd6650bd7dd658
+    authentication: {}
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"title": "Escola",
+        	"value": 1350,
+        	"type": "outcome",
+        	"category": "Educação"
+        }
+    created: 1600955385170
+    description: ""
+    headers:
+      - id: pair_f411fcd7c8cb4b2ea06671fd779ef345
+        name: Content-Type
+        value: application/json
+    isPrivate: false
+    metaSortKey: -1597790560986
+    method: POST
+    modified: 1600955449747
+    name: Create
+    parameters: []
+    parentId: fld_454d2d102bd3454bb2c8354b3db6c72e
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ base_url }}/transactions"
+    _type: request
+  - _id: fld_454d2d102bd3454bb2c8354b3db6c72e
+    created: 1600955385161
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1000000000
+    modified: 1600955385234
+    name: GoStack 11 - Desafio 06
+    parentId: wrk_727386173a214816af98c931bc65ca4f
+    _type: request_group
+  - _id: wrk_727386173a214816af98c931bc65ca4f
+    created: 1600955360716
+    description: ""
+    modified: 1600955360716
+    name: Desafio6-GoStack11
+    parentId: null
+    scope: null
+    _type: workspace
+  - _id: req_c9d3dede6f50481bb8f3ccaad1e86f03
+    authentication: {}
+    body: {}
+    created: 1600955385177
+    description: ""
+    headers: []
+    isPrivate: false
+    metaSortKey: -1597790560936
+    method: GET
+    modified: 1600955446339
+    name: List
+    parameters: []
+    parentId: fld_454d2d102bd3454bb2c8354b3db6c72e
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ base_url }}/transactions"
+    _type: request
+  - _id: req_1690050865e144f2809d9fb7b39b8f01
+    authentication: {}
+    body: {}
+    created: 1600955385183
+    description: ""
+    headers: []
+    isPrivate: false
+    metaSortKey: -1597735339111.125
+    method: DELETE
+    modified: 1600955453134
+    name: Delete
+    parameters: []
+    parentId: fld_454d2d102bd3454bb2c8354b3db6c72e
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ base_url }}/transactions/6d095049-c6c3-46cf-bec5-d53fbb532da0"
+    _type: request
+  - _id: req_257974669ca446778ff79f71b2eeb243
+    authentication: {}
+    body:
+      mimeType: multipart/form-data
+      params:
+        - description: ""
+          fileName: /home/castro/Cursos/Rocketseat/GoStack-11/Nivel-02/desafios/desafio-database-upload/src/__tests__/import_template.csv
+          id: pair_e1189ceebbaf4da2beca995fd3e33a23
+          name: file
+          type: file
+          value: ""
+    created: 1600955385192
+    description: ""
+    headers:
+      - id: pair_f411fcd7c8cb4b2ea06671fd779ef345
+        name: Content-Type
+        value: multipart/form-data
+    isPrivate: false
+    metaSortKey: -1597680117286.25
+    method: POST
+    modified: 1600955385192
+    name: Import
+    parameters: []
+    parentId: fld_454d2d102bd3454bb2c8354b3db6c72e
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingFollowRedirects: global
+    settingRebuildPath: true
+    settingSendCookies: true
+    settingStoreCookies: true
+    url: "{{ base_url }}/transactions/import"
+    _type: request
+  - _id: env_ea0ac5de3678fc5b3108c2d12d0711757c781a94
+    color: null
+    created: 1600955360881
+    data:
+      base_url: http://localhost:3333
+    dataPropertyOrder:
+      "&":
+        - base_url
+    isPrivate: false
+    metaSortKey: 1600955360881
+    modified: 1600955417563
+    name: Base Environment
+    parentId: wrk_727386173a214816af98c931bc65ca4f
+    _type: environment
+  - _id: jar_ea0ac5de3678fc5b3108c2d12d0711757c781a94
+    cookies: []
+    created: 1600955360883
+    modified: 1600955360883
+    name: Default Jar
+    parentId: wrk_727386173a214816af98c931bc65ca4f
+    _type: cookie_jar
+  - _id: spc_b648846a47e9452b8244f2ee83745cf7
+    contentType: yaml
+    contents: ""
+    created: 1600955360736
+    fileName: Desafio6-GoStack11
+    modified: 1600955360736
+    parentId: wrk_727386173a214816af98c931bc65ca4f
+    _type: api_spec

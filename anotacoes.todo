@@ -1,0 +1,21 @@
+✔ Criar as migrações @done(20-09-23 09:54)
+Categories
+Transactions
+
+# COMANDOS:
+yarn typeorm migration:create -n CreateCategories
+yarn typeorm migration:create -n CreateTransactions
+yarn typeorm migration:create -n CreateAddFieldCategoryIdTransactions
+yarn typeorm migration:on
+
+Revertendo:
+yarn typeorm migration:revert
+
+✔ Trabalhar nas rotas "transactions.routes.ts" @done(20-09-23 10:43)
+✔ Cadastro de Transações @done(20-09-23 10:50)
+✔ Listagem de Transações @done(20-09-23 10:50)
+✔ Remover uma Transação @done(20-09-23 11:01)
+
+https://www.notion.so/Importando-arquivos-CSV-com-Node-js-2172338480cb47e28a5d3ed9981c38a0
+
+https://github.com/rocketseat-education/bootcamp-gostack-desafios/tree/master/desafio-database-upload
